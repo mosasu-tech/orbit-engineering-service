@@ -10,7 +10,7 @@ export default function Header() {
            <Image 
             src="/img/logo.png" 
             alt="Orbit Logo" 
-            width={150} 
+            width={190} 
             height={48} 
             priority 
           />
