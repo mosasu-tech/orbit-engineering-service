@@ -1,0 +1,84 @@
+[00:00:05.149] Server  LOG      ✓ Ready in 2.7s
+[00:04:44.299] Server  LOG      ○ Compiling / ...
+[00:05:01.200] Server  LOG     {"Section":"SEO","Field":"Title","Value":"Orbit Engineering Services - Engineering Excellence Through Innovation"}
+[00:05:01.201] Server  LOG     {"Section":"SEO","Field":"Description","Value":"Leading provider in BIM, CAD, and facility management services."}
+[00:05:01.202] Server  LOG     {"Section":"SEO","Field":"Canonical","Value":"https://orbit-engineering.com/"}
+[00:05:01.203] Server  LOG     {"Section":"SEO","Field":"OGImage","Value":"og-image.jpg"}
+[00:05:01.203] Server  LOG     {"Section":"Header","Field":"logo-img","Value":"logo.PNG"}
+[00:05:01.213] Server  ERROR   (node:2388) [DEP0108] DeprecationWarning: zlib.bytesRead is deprecated and will change its meaning in the future. Use zlib.bytesWritten instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[00:05:01.890] Server  LOG     {"SlideNo":"1","Title":"Transforming Infrastructure","Subtitle":"Innovative BIM & CAD Solutions","CtaText":"Explore Services","Image":"hero1.jpg"}
+[00:05:01.891] Server  LOG     {"SlideNo":"2","Title":"Building the Future","Subtitle":"Excellence in Structural Design","CtaText":"View Projects","Image":"hero2.jpg"}
+[00:05:01.892] Server  LOG     {"SlideNo":"3","Title":"Engineering Tomorrow","Subtitle":"Smart MEP & Sustainability","CtaText":"Contact Us","Image":"hero3.jpg"}
+[00:05:02.014] Server  LOG     {"Slug":"pre-bid-estimation","Title":"Pre Bid Estimation","ShortDescription":"Estimate costs accurately before tender submission.","Icon":"calc.svg","SEO_Title":"Pre Bid Estimation","SEO_Description":"Forecasting project bids with precision.","SEO_Canonical":"https://orbit-engineering.com/services/pre-bid-estimation","SEO_OGImage":"feature1-og.jpg"}
+[00:05:02.015] Server  LOG     {"Slug":"bim-services","Title":"BIM Services","ShortDescription":"3D BIM models to optimize construction efficiency.","Icon":"cube.svg","SEO_Title":"BIM Services","SEO_Description":"Accurate 3D BIM modeling and clash detection.","SEO_Canonical":"https://orbit-engineering.com/services/bim-services","SEO_OGImage":"feature2-og.jpg"}
+[00:05:02.015] Server  LOG     {"Slug":"cad-drafting","Title":"CAD Drafting","ShortDescription":"Precision 2D & 3D drafting solutions.","Icon":"ruler.svg","SEO_Title":"CAD Drafting","SEO_Description":"Professional CAD drawings and documentation.","SEO_Canonical":"https://orbit-engineering.com/services/cad-drafting","SEO_OGImage":"feature3-og.jpg"}
+[00:05:02.078] Server  LOG     {"Slug":"modern-hospital","Title":"Modern Hospital Complex","ShortDescription":"500-bed hospital with BIM & MEP design.","Image":"project1.jpg","Tags":"BIM, MEP","SEO_Title":"Modern Hospital Complex","SEO_Description":"BIM-integrated healthcare project with MEP.","SEO_Canonical":"https://orbit-engineering.com/projects/modern-hospital","SEO_OGImage":"project1-og.jpg"}
+[00:05:02.079] Server  LOG     {"Slug":"corporate-tower","Title":"Corporate Office Tower","ShortDescription":"30-storey office with CAD and structure design.","Image":"project2.jpg","Tags":"CAD, Structure","SEO_Title":"Corporate Office Tower","SEO_Description":"Efficient high-rise designed with CAD + structure analysis.","SEO_Canonical":"https://orbit-engineering.com/projects/corporate-tower","SEO_OGImage":"project2-og.jpg"}
+[00:05:02.080] Server  LOG     {"Slug":"residential-luxury","Title":"Luxury Residential Complex","ShortDescription":"BIM + facility management for premium housing.","Image":"project3.jpg","Tags":"BIM, FM","SEO_Title":"Luxury Residential Complex","SEO_Description":"Luxury residential project with BIM-based facility planning.","SEO_Canonical":"https://orbit-engineering.com/projects/residential-luxury","SEO_OGImage":"project3-og.jpg"}
+[00:05:02.088] Server  LOG     peroject {}
+[00:05:02.092] Server  LOG     peroject {}
+[00:05:02.095] Server  LOG     peroject {}
+[00:05:02.119] Server  LOG     {"Section":"Stat","Label":"Projects Completed","Count":"500+"}
+[00:05:02.119] Server  LOG     {"Section":"Stat","Label":"Active Clients","Count":"100+"}
+[00:05:02.120] Server  LOG     {"Section":"Stat","Label":"Industry Experts","Count":"50+"}
+[00:05:02.120] Server  LOG     {"Section":"Stat","Label":"Years Experience","Count":"15+"}
+[00:05:02.451] Server  LOG     {"Slug":"pre-bid-estimation","Title":"Pre Bid Estimation","HeroImage":"feature1.jpg","Intro":"We offer accurate cost forecasting for large infrastructure and real estate projects before tendering.","KeyPoints":"Detailed quantity take-offs, Material & labor analysis, Cost risk optimization, Tender comparison","Process":"1. Client shares project scope2. We extract BOQs3. Apply region-specific rates4. Deliver complete bid report","Benefits":"Reduces bid losses, Improves project profitability, Saves estimation time","SEO_Title":"Pre Bid Estimation","SEO_Description":"Comprehensive estimation for accurate project bidding.","SEO_Canonical":"https://orbit-engineering.com/services/pre-bid-estimation","SEO_OGImage":"feature1-og.jpg"}
+[00:05:02.452] Server  LOG     {"Slug":"bim-services","Title":"BIM Services","HeroImage":"feature2.jpg","Intro":"Advanced BIM modeling and visualization for architecture, MEP, and structure.","KeyPoints":"Clash detection, Coordination models, LOD 100-500 delivery, IFC exports","Process":"1. Receive 2D drawings2. Model in Revit3. Validate with client4. Export IFC and deliver BIM report","Benefits":"Improves coordination, Reduces rework, Enhances data accuracy","SEO_Title":"BIM Services","SEO_Description":"Cutting-edge Building Information Modeling for all project stages.","SEO_Canonical":"https://orbit-engineering.com/services/bim-services","SEO_OGImage":"feature2-og.jpg"}
+[00:05:02.453] Server  LOG     {"Slug":"cad-drafting","Title":"CAD Drafting","HeroImage":"feature3.jpg","Intro":"2D and 3D CAD drafting services for civil, structural, and mechanical domains.","KeyPoints":"Layout creation, Section detailing, As-built documentation","Process":"1. Client provides markup2. Drafting team digitizes3. QA check4. Delivery in DWG/PDF","Benefits":"Precise drawings, Faster turnaround, Quality assurance","SEO_Title":"CAD Drafting","SEO_Description":"Professional CAD drawing and drafting support.","SEO_Canonical":"https://orbit-engineering.com/services/cad-drafting","SEO_OGImage":"feature3-og.jpg"}
+[00:05:02.463] Server  LOG     {"Slug":"pre-bid-estimation","Title":"Pre Bid Estimation","HeroImage":"feature1.jpg","Intro":"We offer accurate cost forecasting for large infrastructure and real estate projects before tendering.","KeyPoints":"Detailed quantity take-offs, Material & labor analysis, Cost risk optimization, Tender comparison","Process":"1. Client shares project scope2. We extract BOQs3. Apply region-specific rates4. Deliver complete bid report","Benefits":"Reduces bid losses, Improves project profitability, Saves estimation time","SEO_Title":"Pre Bid Estimation","SEO_Description":"Comprehensive estimation for accurate project bidding.","SEO_Canonical":"https://orbit-engineering.com/services/pre-bid-estimation","SEO_OGImage":"feature1-og.jpg"}
+[00:05:02.464] Server  LOG     {"Slug":"bim-services","Title":"BIM Services","HeroImage":"feature2.jpg","Intro":"Advanced BIM modeling and visualization for architecture, MEP, and structure.","KeyPoints":"Clash detection, Coordination models, LOD 100-500 delivery, IFC exports","Process":"1. Receive 2D drawings2. Model in Revit3. Validate with client4. Export IFC and deliver BIM report","Benefits":"Improves coordination, Reduces rework, Enhances data accuracy","SEO_Title":"BIM Services","SEO_Description":"Cutting-edge Building Information Modeling for all project stages.","SEO_Canonical":"https://orbit-engineering.com/services/bim-services","SEO_OGImage":"feature2-og.jpg"}
+[00:05:02.465] Server  LOG     {"Slug":"cad-drafting","Title":"CAD Drafting","HeroImage":"feature3.jpg","Intro":"2D and 3D CAD drafting services for civil, structural, and mechanical domains.","KeyPoints":"Layout creation, Section detailing, As-built documentation","Process":"1. Client provides markup2. Drafting team digitizes3. QA check4. Delivery in DWG/PDF","Benefits":"Precise drawings, Faster turnaround, Quality assurance","SEO_Title":"CAD Drafting","SEO_Description":"Professional CAD drawing and drafting support.","SEO_Canonical":"https://orbit-engineering.com/services/cad-drafting","SEO_OGImage":"feature3-og.jpg"}
+[00:05:02.608] Server  LOG     {"Slug":"pre-bid-estimation","Title":"Pre Bid Estimation","HeroImage":"feature1.jpg","Intro":"We offer accurate cost forecasting for large infrastructure and real estate projects before tendering.","KeyPoints":"Detailed quantity take-offs, Material & labor analysis, Cost risk optimization, Tender comparison","Process":"1. Client shares project scope2. We extract BOQs3. Apply region-specific rates4. Deliver complete bid report","Benefits":"Reduces bid losses, Improves project profitability, Saves estimation time","SEO_Title":"Pre Bid Estimation","SEO_Description":"Comprehensive estimation for accurate project bidding.","SEO_Canonical":"https://orbit-engineering.com/services/pre-bid-estimation","SEO_OGImage":"feature1-og.jpg"}
+[00:05:02.608] Server  LOG     {"Slug":"bim-services","Title":"BIM Services","HeroImage":"feature2.jpg","Intro":"Advanced BIM modeling and visualization for architecture, MEP, and structure.","KeyPoints":"Clash detection, Coordination models, LOD 100-500 delivery, IFC exports","Process":"1. Receive 2D drawings2. Model in Revit3. Validate with client4. Export IFC and deliver BIM report","Benefits":"Improves coordination, Reduces rework, Enhances data accuracy","SEO_Title":"BIM Services","SEO_Description":"Cutting-edge Building Information Modeling for all project stages.","SEO_Canonical":"https://orbit-engineering.com/services/bim-services","SEO_OGImage":"feature2-og.jpg"}
+[00:05:02.609] Server  LOG     {"Slug":"cad-drafting","Title":"CAD Drafting","HeroImage":"feature3.jpg","Intro":"2D and 3D CAD drafting services for civil, structural, and mechanical domains.","KeyPoints":"Layout creation, Section detailing, As-built documentation","Process":"1. Client provides markup2. Drafting team digitizes3. QA check4. Delivery in DWG/PDF","Benefits":"Precise drawings, Faster turnaround, Quality assurance","SEO_Title":"CAD Drafting","SEO_Description":"Professional CAD drawing and drafting support.","SEO_Canonical":"https://orbit-engineering.com/services/cad-drafting","SEO_OGImage":"feature3-og.jpg"}
+[00:05:04.211] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:05.467] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/orbit-eng...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+                            className="min-h-screen bg-white text-slate-800"
+-                           data-new-gr-c-s-check-loaded="14.1261.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <SegmentViewNode type="page" pagePath="/orbit-eng...">
+                                <SegmentTrieNode>
+                                <HomePage>
+                                  <html lang="en">
+                                    <head>
+                                    <body
+                                      className="min-h-screen bg-white text-slate-800"
+-                                     data-new-gr-c-s-check-loaded="14.1261.0"
+-                                     data-gr-ext-installed=""
+                                    >
+                              ...
+                  ...
+

@@ -11,7 +11,7 @@ export default function Header() {
             src="/img/logo.png" 
             alt="Orbit Logo" 
             width={190} 
-            height={48} 
+            height={190} 
             priority 
           />
           {/* <span className="font-semibold text-lg text-slate-800">Orbit Engineering</span> */}

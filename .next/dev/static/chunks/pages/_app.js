@@ -1,0 +1,13 @@
+__turbopack_load_page_chunks__("/_app", [
+  "static/chunks/14ef0_next_dist_compiled_24a323b1._.js",
+  "static/chunks/14ef0_next_dist_shared_lib_97b47b3f._.js",
+  "static/chunks/14ef0_next_dist_client_ffe25b99._.js",
+  "static/chunks/14ef0_next_dist_ac90f604._.js",
+  "static/chunks/14ef0_next_app_af4e480f.js",
+  "static/chunks/[next]_entry_page-loader_ts_3f19a44c._.js",
+  "static/chunks/14ef0_react-dom_2f2d6f36._.js",
+  "static/chunks/14ef0_7e717439._.js",
+  "static/chunks/[root-of-the-server]__74358d0c._.js",
+  "static/chunks/orbit-engineering-service_pages__app_2da965e7._.js",
+  "static/chunks/turbopack-orbit-engineering-service_pages__app_2b705b78._.js"
+])
