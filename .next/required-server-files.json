@@ -294,8 +294,8 @@
     },
     "distDirRoot": ".next"
   },
-  "appDir": "E:\\sujoy\\oes\\development\\orbit-engineering-service",
-  "relativeAppDir": "orbit-engineering-service",
+  "appDir": "E:\\sujoy\\oes\\development\\orbit-engineering-service-1",
+  "relativeAppDir": "orbit-engineering-service-1",
   "files": [
     ".next\\routes-manifest.json",
     ".next\\server\\pages-manifest.json",

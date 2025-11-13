@@ -1,0 +1,20 @@
+{
+  "node": {
+    "4034e279466a190a2ea7aca8cd45aeba14e88050fb": {
+      "workers": {
+        "app/careers/page": {
+          "moduleId": 49874,
+          "async": false,
+          "exportedName": "getSheetData",
+          "filename": "orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts"
+        }
+      },
+      "layer": {
+        "app/careers/page": "rsc"
+      },
+      "exportedName": "getSheetData",
+      "filename": "orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts"
+    }
+  },
+  "edge": {}
+}
