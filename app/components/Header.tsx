@@ -20,7 +20,7 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 text-slate-700">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="/feature">Features</Link>
+          <Link href="/services">Services</Link>
           <Link href="/projects">Projects</Link>
           <Link href="/contact">Contact Us</Link>
           <Link href="/careers">Careers</Link>

@@ -2,11 +2,24 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+
 export default function ContactSection() {
   return (
-    <><Header /><section className="min-h-screen bg-gradient-to-b from-sky-50 to-white px-6 py-16 flex flex-col items-center">
-          {/* Section Title */}
-          <h2 className="text-4xl font-bold text-slate-800 mb-12">Our Contact</h2>
+    <><Header />
+     {/* HERO SECTION */}
+      <section className="relative h-[200px] flex items-center overflow-hidden">
+        {/* <img
+          src={`/img/${hero.Image}`}
+          alt="Projects Hero"
+          className="absolute inset-0 w-full h-full object-cover" /> */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/40 to-transparent" />
+        <div className="container mx-auto relative z-10 px-6">
+          <h1 className="text-white text-4xl font-semibold mb-2">Contact Us</h1>
+          {/* <p className="text-slate-200 max-w-2xl">{hero.Subtitle}</p> */}
+        </div>
+      </section>
+    <section className="min-h-screen bg-gradient-to-b from-sky-50 to-white px-6 py-16 flex flex-col items-center">
+          
 
           {/* Content Grid */}
           <div className="grid md:grid-cols-2 gap-8 w-full max-w-5xl">

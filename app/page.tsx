@@ -34,7 +34,9 @@ export default async function HomePage() {
       <body className="min-h-screen bg-white text-slate-800">
         <Header />
         <main>
+          <div className='bg-gradient-to-br from-sky-50 to-teal-50 pb-16'>
           <Hero />
+          </div>
           <Stats />
            <section className="container ps-4 grid lg:grid-cols-[2fr_1fr] gap-12 items-stretch me-0">
               <div>

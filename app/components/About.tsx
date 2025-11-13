@@ -18,7 +18,7 @@ export default async function About() {
           <p className="text-slate-600 mb-4">
             {aboutData.description}
           </p>
-          {/* <p className="text-slate-600 mb-6">
+          <p className="text-slate-600 mb-6">
             Our mission is to reduce waste, improve collaboration, and accelerate innovation through intelligent modeling.
           </p>
           <ul className="space-y-4">
@@ -34,7 +34,7 @@ export default async function About() {
               </span>
               <span><strong>Expert Team</strong> — Certified professionals</span>
             </li>
-          </ul> */}
+          </ul>
         </div>
         <div>
           {aboutData.image && (

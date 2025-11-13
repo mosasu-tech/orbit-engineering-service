@@ -34,7 +34,7 @@ export default async function ProjectsPage() {
   return (
     <><Header /><main className="flex flex-col">
       {/* HERO SECTION */}
-      <section className="relative h-[360px] flex items-center overflow-hidden">
+      <section className="relative h-[200px] flex items-center overflow-hidden">
         <img
           src={`/img/${hero.Image}`}
           alt="Projects Hero"
@@ -47,8 +47,9 @@ export default async function ProjectsPage() {
       </section>
 
       {/* STATS SECTION */}
-      <Stats />
-
+      <div>
+        <Stats />
+      </div>
       {/* FILTERS */}
       <section className="container mx-auto px-4 py-10">
         <div className="bg-white rounded-xl p-6 shadow mb-6">
