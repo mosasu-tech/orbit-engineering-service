@@ -1,17 +1,30 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { getSheetData } from "../lib/fetchGoogleSheet";
 
+ 
 
-export default function ContactSection() {
+export default async function ContactSection() {
+    const rows = await getSheetData("Locations");
+
+  const locations = rows
+    .filter(r => r.Section === "Location")
+    .map(r => ({
+      name: r.Name,
+      lat: parseFloat(r.Latitude),
+      lng: parseFloat(r.Longitude),
+      address: r.Address,
+    }));
+
   return (
     <><Header />
      {/* HERO SECTION */}
       <section className="relative h-[200px] flex items-center overflow-hidden">
-        {/* <img
-          src={`/img/${hero.Image}`}
+        <img
+          src={`/img/contact_us_hero.jpg`}
           alt="Projects Hero"
-          className="absolute inset-0 w-full h-full object-cover" /> */}
+          className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/40 to-transparent" />
         <div className="container mx-auto relative z-10 px-6">
           <h1 className="text-white text-4xl font-semibold mb-2">Contact Us</h1>
@@ -28,10 +41,10 @@ export default function ContactSection() {
                   <h3 className="text-2xl font-semibold text-slate-800">Get in touch</h3>
                   <div className="space-y-3 text-slate-600">
                       <p className="flex items-center gap-3">
-                          <Mail className="text-sky-500" /> info@oes-engineering.com
+                          <Mail className="text-sky-500" /> info@oespty.com
                       </p>
                       <p className="flex items-center gap-3">
-                          <Phone className="text-rose-500" /> +1 (555) 123-4567
+                          <Phone className="text-rose-500" /> +61-433-219-447
                       </p>
                   </div>
 
@@ -39,9 +52,8 @@ export default function ContactSection() {
                       <h4 className="text-lg font-semibold text-slate-800 mt-6 mb-2">
                           Office Location
                       </h4>
-                      <div className="bg-slate-100 rounded-xl h-48 flex flex-col items-center justify-center text-slate-500">
-                          <MapPin className="text-red-500 w-6 h-6 mb-2" />
-                          Map Placeholder
+                      <div className="bg-slate-100 rounded-xl min-h-[500px] p-6 overflow-hidden">
+                          
                       </div>
                   </div>
               </div>

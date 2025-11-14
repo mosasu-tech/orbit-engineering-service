@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 export default function Clients() {
-  const clients = ["pepsi.PNG", "kfc.PNG", "bk.PNG", "harvard.PNG", "tata.PNG", "ford.PNG"];
+  const clients = ["ae_smith.png", "air_master.png", "ambient_services.jpg", "amin_group.png","climatech.png", "equilibrium.jpg", "fredon.jpg", "Icon_mechanical_services.png", "jec_airconditioning.jpg","metalair_sheetmetal.png", "precise_air.png", "protech.png", "Icon_mechanical_services.png", "redstar.jpg","seda_services_logo.jpg","varium.png"];
 
   return (
     <section className="py-20 bg-white text-center overflow-hidden">
@@ -32,7 +32,7 @@ export default function Clients() {
                 className="flex-shrink-0 w-40 h-28 rounded-1xl bg-gray-50 shadow-md hover:shadow-lg flex items-center justify-center transition-all"
               >
                 <img
-                  src={`/img/${logo}`}
+                  src={`/img/client/${logo}`}
                   alt={logo.replace(".PNG", "")}
                   className="h-14 object-contain transition"
                 />

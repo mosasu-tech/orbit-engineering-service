@@ -81,11 +81,11 @@ export default async function CareersPage() {
           <p className="text-slate-200 max-w-2xl">{hero.Subtitle}</p>
         </div>
       </section>
-      <main className="container mx-auto py-16 px-4">
+      <main className="container mx-auto ">
      
 
         {/* ===== Careers Section ===== */}
-        <section id="careers" className="bg-gray-50 rounded-[3rem] py-12 px-8 shadow-md">
+        <section id="careers" className="bg-gray-50 py-6 px-8 shadow-md">
           <h2 className="text-3xl font-bold text-center mb-4 bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
             {hero.Subtitle || 'Join Our Team'}
           </h2>

@@ -53,6 +53,8 @@ export default async function ProjectDetail({ slug }: { slug: string }) {
     .split(";")
     .map((s: string) => s.trim())
     .filter(Boolean);
+  
+
 
   return (
     <>
@@ -171,7 +173,7 @@ export default async function ProjectDetail({ slug }: { slug: string }) {
           {outcomes.length > 0 && (
             <>
               <h3 className="text-xl font-semibold mb-4">Project Outcomes</h3>
-              <div className="bg-gradient-to-r from-blue-600 to-violet-600 text-white p-8 rounded mb-8">
+              <div className="bg-gradient-to-br from-sky-50 to-teal-50 text-black p-8 rounded mb-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {outcomes.map((o: string, i: number) => (
                     <div key={i} className="text-sm">
@@ -185,18 +187,29 @@ export default async function ProjectDetail({ slug }: { slug: string }) {
           )}
 
           {/* CTA */}
-          <div className="bg-slate-50 p-8 rounded text-center">
+          {/* <div className="bg-slate-50 p-8 rounded text-center">
             <h4 className="font-semibold mb-2">Interested in a Similar Project?</h4>
             <p className="text-slate-600 mb-4">Let's discuss how we can bring your vision to life.</p>
             <div className="flex justify-center gap-4">
               <a href="/contact" className="inline-block bg-blue-600 text-white px-6 py-2 rounded">Start a Conversation</a>
               <a href="/projects" className="inline-block border border-slate-200 px-6 py-2 rounded">View All Projects</a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Sidebar */}
         <aside>
+           <div className="bg-slate-50 rounded p-6 mb-6">
+            <h4 className="font-semibold mb-3">Highlights</h4>
+            <ul className="text-sm space-y-2">
+              {highlights.map((s: string, i: number) => (
+                <li key={i} className="flex items-center gap-3">
+                  <span className="inline-block w-3 h-3 rounded-full bg-green-500" />
+                  {s}
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="bg-slate-50 rounded p-6 mb-6">
             <h4 className="font-semibold mb-3">Services Provided</h4>
             <ul className="text-sm space-y-2">

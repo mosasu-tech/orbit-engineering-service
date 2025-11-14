@@ -19,9 +19,12 @@ export default function ManagementTeam({ data }: { data: any[] }) {
             className="h-40 w-40 object-cover rounded-full shadow-md border-4 border-white group-hover:scale-105 transition-transform duration-300"
           />
         ) : (
-          <div className="h-40 w-40 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 text-sm">
-            No Image
-          </div>
+          <img
+            src={`/img/profile_placeholder.png`}
+            alt={member.Name}
+            className="h-40 w-40 object-cover rounded-full shadow-md border-4 border-white group-hover:scale-105 transition-transform duration-300"
+          />
+          
         )}
       </div>
       <div className="p-8 text-center">

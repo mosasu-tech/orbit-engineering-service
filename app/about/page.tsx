@@ -61,7 +61,7 @@ export default async function AboutPage() {
       <section className="relative h-[200px] flex items-center overflow-hidden">
         {about.Image && (
           <img
-            src={`/img/${about.Image}`}
+            src={`/img/${about.hero}`}
             alt="About Hero"
             className="absolute inset-0 w-full h-full object-cover"
           />

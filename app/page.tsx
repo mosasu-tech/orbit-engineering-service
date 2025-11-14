@@ -44,7 +44,7 @@ export default async function HomePage() {
                 <Services />
               </div>
 
-              <div cl>
+              <div className='pt-10'>
               
                 <GetInTouch />
               </div>
