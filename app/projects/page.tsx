@@ -48,7 +48,7 @@ export default async function ProjectsPage() {
 
       {/* STATS SECTION */}
       <div>
-        <Stats />
+        <Stats pathname="/projects"/>
       </div>
       {/* FILTERS */}
       <section className="container mx-auto px-4 py-10">

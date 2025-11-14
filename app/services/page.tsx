@@ -3,6 +3,7 @@ import { generateNextSeo } from 'next-seo/pages'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import FeatureCard from '../components/FeatureCard'
+import Services from '../components/Services'
 
 
 export const revalidate = 600
@@ -42,16 +43,16 @@ export default async function FeaturesPage() {
           <p className="text-slate-200 max-w-2xl">{hero.Subtitle}</p>
         </div>
       </section>
+<Services ></Services>
 
-
-      <main className="container mx-auto py-16 px-4">
+      {/* <main className="container mx-auto py-16 px-4">
        
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {data.map((f: any) => (
             <FeatureCard key={f.Slug} feature={f} />
           ))}
         </div>
-      </main>
+      </main> */}
 
     {/* CTA Section */}
 {/* <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 text-center container mx-auto">
