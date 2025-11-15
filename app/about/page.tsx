@@ -5,7 +5,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Services from '../components/FeatureSection';
 import Projects from '../components/ProjectSection';
-import OurJourney from '../components/OurJourney';
 import ManagementTeam from '../components/ManagementTeam';
 
 export const revalidate = 600;
@@ -15,33 +14,34 @@ export default async function AboutPage() {
   const journeyRows = await getSheetData('Journey');
   const managementRows = await getSheetData('Management');
 
-  // 🔹 Extract SEO data
+  // SEO
   const seo = Object.fromEntries(
     rows
       .filter((r: any) => r.Section === 'SEO' && r.Field && r.Value)
       .map((r: any) => [r.Field, r.Value])
   );
 
-  // 🔹 Extract About data
+  // About Details
   const about = Object.fromEntries(
     rows
       .filter((r: any) => r.Section === 'About' && r.Field && r.Value)
       .map((r: any) => [r.Field, r.Value])
   );
 
-  // 🔹 Extract Description subsections dynamically (Our Vision, Our Commitment, etc.)
-  const sections = rows
-    .filter((r: any) => r.Section === 'Description' && (r.Title || r.Text))
-    .map((r: any) => ({
-      title: r.Title || '',
-      text: r.Text || '',
-    }));
+  // Dynamic Description Blocks
+const sections = rows
+  .filter((r: any) => r.Section === 'Description')
+  .filter((r: any) => r.Title?.trim() || r.Text?.trim()) // <-- remove empty rows
+  .map((r: any) => ({
+    title: r.Title?.trim(),
+    text: r.Text?.trim(),
+    parallax: r.Parallax || r.parallax || '', // preserve existing logic
+  }));
 
-  // 🔹 Extract Journey and Management
+
   const journeyData = journeyRows.filter((r: any) => r.Section === 'Journey');
   const managementData = managementRows.filter((r: any) => r.Section === 'Management');
 
-  // 🔹 SEO metadata
   generateNextSeo({
     title: seo.Title || 'About Us - Orbit Engineering Services',
     description: seo.Description || about.Description,
@@ -53,6 +53,21 @@ export default async function AboutPage() {
     },
   });
 
+  // Titles requiring parallax
+  const parallaxList = [
+    "About Our Company",
+    "Our Commitment",
+    "Our Vision",
+    "Our Projects Include",
+  ];
+const overlayColors = [
+  "bg-rose-100/70 dark:bg-rose-900/60",
+  "bg-indigo-100/70 dark:bg-indigo-900/60",
+  "bg-emerald-100/70 dark:bg-emerald-900/60",
+  "bg-amber-100/70 dark:bg-amber-900/60",
+  "bg-sky-100/70 dark:bg-sky-900/60",
+  "bg-violet-100/70 dark:bg-violet-900/60",
+];
   return (
     <>
       <Header />
@@ -75,52 +90,71 @@ export default async function AboutPage() {
 
       {/* MAIN CONTENT */}
       <main className="container mx-auto">
-        {/* ABOUT SECTION */}
-        <section id="about" className="py-20 bg-gradient-to-br from-sky-50 to-teal-50 px-8">
-          <div className="container mx-auto grid md:grid-cols-2 gap-12 items-start">
-            <div>
-              <h2 className="text-3xl font-bold mb-4">{about.Title}</h2>
-              <div
-  className="text-slate-700 leading-relaxed"
-  dangerouslySetInnerHTML={{ __html: about.Description }}
-/>
 
-              {/* Render dynamic subsections */}
-              {sections.length > 0 && (
-                <div className="space-y-8">
-                  {sections.map((s, i) => (
-                    <div key={i}>
-                      {s.title && (
-                        <h3 className="text-2xl font-semibold mb-3">{s.title}</h3>
-                      )}
-                      {s.text && (
-                        <p className="whitespace-pre-line text-slate-700 leading-relaxed">
-                          {s.text}
-                        </p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+        {/* FIRST ABOUT SECTION → PARALLAX */}
+        <section
+          className="relative py-28 px-8 bg-fixed bg-center bg-cover text-slate-900"
+          style={{ backgroundImage: `url(/img/${about.Image})` }}
+        >
+          <div className="absolute inset-0 bg-white/85 backdrop-blur-sm"></div>
 
-            {about.Image && (
-              <div>
-                <img
-                  src={`/img/${about.Image}`}
-                  alt={about.Title || 'About Image'}
-                  className="rounded-lg shadow-lg mx-auto"
-                />
-              </div>
-            )}
+          <div className="relative container mx-auto max-w-4xl">
+            <h2 className="text-4xl font-bold mb-6">{about.Title}</h2>
+            <div
+              className="text-lg leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: about.Description }}
+            />
           </div>
         </section>
 
-        {/* OTHER SECTIONS */}
+        {/* DYNAMIC SUBSECTIONS */}
+        {sections.map((s, i) => {
+  const isParallax = String(s.parallax || s.Parallax || '').toLowerCase() === 'true' 
+                  || String(s.parallax || s.Parallax || '').toLowerCase() === 'yes' 
+                  || String(s.parallax || s.Parallax || '').trim() === '1';
+ const overlayColor = overlayColors[i % overlayColors.length];
+  return (
+  
+      <section
+      key={i}
+          className="relative py-28 px-8 bg-fixed bg-center bg-cover text-slate-900"
+          style={{ backgroundImage: `url(/img/${about.Image})` }}
+        >
+      {/* Parallax Overlay */}
+     
+        <div className={`absolute inset-0 backdrop-blur-sm ${overlayColor}`} />
+      
+
+      <div className="relative max-w-4xl mx-auto text-center">
+        {s.title && (
+          <h3
+            className={`text-4xl font-semibold mb-6 ${
+              isParallax ? 'text-black' : 'text-slate-900'
+            }`}
+          >
+            {s.title}
+          </h3>
+        )}
+
+        {s.text && (
+          <p
+            className={`whitespace-pre-line text-lg leading-relaxed max-w-3xl mx-auto ${
+              isParallax ? 'text-black' : 'text-slate-700'
+            }`}
+         
+            dangerouslySetInnerHTML={{ __html: s.text }}  >
+          </p>
+        )}
+      </div>
+    </section>
+  );
+})}
+
+
+        {/* UNCHANGED SECTIONS BELOW */}
         <ManagementTeam data={managementData} />
         <Projects />
         <Services />
-        {/* <OurJourney data={journeyData} /> */}
       </main>
 
       <Footer />
