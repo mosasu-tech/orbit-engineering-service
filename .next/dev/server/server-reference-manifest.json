@@ -13,32 +13,11 @@
           "async": false,
           "exportedName": "getSheetData",
           "filename": "orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts"
-        },
-        "app/page": {
-          "moduleId": "[project]/orbit-engineering-service-1/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getSheetData",
-          "filename": "orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts"
-        },
-        "app/projects/page": {
-          "moduleId": "[project]/orbit-engineering-service-1/.next-internal/server/app/projects/page/actions.js { ACTIONS_MODULE0 => \"[project]/orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getSheetData",
-          "filename": "orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts"
-        },
-        "app/services/page": {
-          "moduleId": "[project]/orbit-engineering-service-1/.next-internal/server/app/services/page/actions.js { ACTIONS_MODULE0 => \"[project]/orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getSheetData",
-          "filename": "orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts"
         }
       },
       "layer": {
         "app/about/page": "rsc",
-        "app/careers/page": "rsc",
-        "app/page": "rsc",
-        "app/projects/page": "rsc",
-        "app/services/page": "rsc"
+        "app/careers/page": "rsc"
       },
       "filename": "orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts",
       "exportedName": "getSheetData"

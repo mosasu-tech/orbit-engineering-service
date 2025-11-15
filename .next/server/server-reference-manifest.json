@@ -14,6 +14,12 @@
           "exportedName": "getSheetData",
           "filename": "orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts"
         },
+        "app/contact/page": {
+          "moduleId": 93649,
+          "async": false,
+          "exportedName": "getSheetData",
+          "filename": "orbit-engineering-service-1/app/lib/fetchGoogleSheet.ts"
+        },
         "app/page": {
           "moduleId": 68892,
           "async": false,
@@ -42,6 +48,7 @@
       "layer": {
         "app/about/page": "rsc",
         "app/careers/page": "rsc",
+        "app/contact/page": "rsc",
         "app/page": "rsc",
         "app/projects/[slug]/page": "rsc",
         "app/projects/page": "rsc",

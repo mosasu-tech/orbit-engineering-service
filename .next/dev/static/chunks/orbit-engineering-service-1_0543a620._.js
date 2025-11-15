@@ -118,7 +118,7 @@ function HeroClient({ slides }) {
                             className: "mt-6 flex gap-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orbit$2d$engineering$2d$service$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "/features",
+                                    href: "/services",
                                     className: "inline-flex items-center gap-3 bg-white text-blue-900 px-4 py-2 rounded shadow",
                                     children: slide.CtaText || "Explore Services"
                                 }, void 0, false, {
@@ -689,15 +689,25 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$orbit$2d$engineering$2d$serv
 ;
 function Clients() {
     const clients = [
-        "pepsi.PNG",
-        "kfc.PNG",
-        "bk.PNG",
-        "harvard.PNG",
-        "tata.PNG",
-        "ford.PNG"
+        "ae_smith.png",
+        "air_master.png",
+        "ambient_services.jpg",
+        "amin_group.png",
+        "climatech.png",
+        "equilibrium.jpg",
+        "fredon.jpg",
+        "Icon_mechanical_services.png",
+        "jec_airconditioning.jpg",
+        "metalair_sheetmetal.png",
+        "precise_air.png",
+        "protech.png",
+        "Icon_mechanical_services.png",
+        "redstar.jpg",
+        "seda_services_logo.jpg",
+        "varium.png"
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orbit$2d$engineering$2d$service$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20 bg-white text-center overflow-hidden",
+        className: "py-20 bg-gradient-to-br from-sky-50 text-center overflow-hidden",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orbit$2d$engineering$2d$service$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container mx-auto px-6",
             children: [
@@ -738,7 +748,7 @@ function Clients() {
                         ].map((logo, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orbit$2d$engineering$2d$service$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex-shrink-0 w-40 h-28 rounded-1xl bg-gray-50 shadow-md hover:shadow-lg flex items-center justify-center transition-all",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orbit$2d$engineering$2d$service$2d$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: `/img/${logo}`,
+                                    src: `/img/client/${logo}`,
                                     alt: logo.replace(".PNG", ""),
                                     className: "h-14 object-contain transition"
                                 }, void 0, false, {
