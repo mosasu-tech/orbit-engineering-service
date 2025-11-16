@@ -55,7 +55,7 @@ export default function HeroClient({ slides }: { slides: any[] }) {
             {slide.Title}
           </h1>
           <p className="mt-4 text-lg text-slate-200">{slide.Subtitle}</p>
-          <div className="mt-6 flex gap-4">
+          {/* <div className="mt-6 flex gap-4">
             <a
               href="/services"
               className="inline-flex items-center gap-3 bg-white text-blue-900 px-4 py-2 rounded shadow"
@@ -68,10 +68,23 @@ export default function HeroClient({ slides }: { slides: any[] }) {
             >
               View Projects
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
-
+ <div className="absolute z-30 bottom-20 flex justify-center w-full gap-5">
+        <a
+          href="/projects"
+          className="pointer-events-auto px-8 py-4 bg-white/15 border border-white/30 backdrop-blur-md hover:bg-white/25 transition-all rounded-xl shadow-lg text-white font-semibold"
+        >
+          View Projects
+        </a>
+        <a
+          href="/services"
+          className="pointer-events-auto px-8 py-4 bg-black/50 hover:bg-black/80 transition-all rounded-xl shadow-lg text-white font-semibold"
+        >
+          Explore Services
+        </a>
+      </div>  
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3">
         {slides.map((_: any, i: number) => (

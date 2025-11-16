@@ -13,6 +13,7 @@ export default async function AboutPage() {
   const rows = await getSheetData('About');
   const journeyRows = await getSheetData('Journey');
   const managementRows = await getSheetData('Management');
+  
 
   // SEO
   const seo = Object.fromEntries(
@@ -86,16 +87,27 @@ export default async function AboutPage() {
 
         {/* FIRST ABOUT SECTION → PARALLAX */}
         <section
-          className="relative py-28 px-8 bg-fixed bg-center bg-cover text-slate-900"
+          className="relative py-28 px-8 bg-fixed bg-center bg-cover text-slate-900 "
           style={{ backgroundImage: `url(/img/${about.Image})` }}
         >
           <div className="absolute inset-0 bg-white/85 backdrop-blur-sm"></div>
+          <div className='grid md:grid-cols-2 gap-12'>
           <div className="relative container mx-auto max-w-4xl">
             <h2 className="text-4xl font-bold mb-6">{about.Title}</h2>
             <div
               className="text-lg leading-relaxed"
               dangerouslySetInnerHTML={{ __html: about.Description }}
             />
+          </div>
+           <div className='relative container mx-auto max-w-4xl'>
+          {about.Image && (
+          <img
+              src={`/img/${about.Image}`}
+              alt={about.Title || 'About Image'}
+            className="rounded-lg shadow-lg mx-auto"
+          />
+        )}
+        </div>
           </div>
         </section>
 
