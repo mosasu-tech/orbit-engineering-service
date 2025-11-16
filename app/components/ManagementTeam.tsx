@@ -2,7 +2,7 @@ export default function ManagementTeam({ data }: { data: any[] }) {
   return (
     <section className="mb-16 px-6">
       <h3 className="text-3xl ps-6 my-6 bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent text-start">
-        Management Team
+       <strong>Management Team</strong> 
       </h3>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6">

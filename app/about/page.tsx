@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import Services from '../components/FeatureSection';
 import Projects from '../components/ProjectSection';
 import ManagementTeam from '../components/ManagementTeam';
+import ParallaxSections from '../components/ParallaxSections';
 
 export const revalidate = 600;
 
@@ -86,7 +87,7 @@ export default async function AboutPage() {
       <main className="container mx-auto">
 
         {/* FIRST ABOUT SECTION → PARALLAX */}
-        <section
+        {/* <section
           className="relative py-28 px-8 bg-fixed bg-center bg-cover text-slate-900 "
           style={{ backgroundImage: `url(/img/${about.Image})` }}
         >
@@ -109,10 +110,42 @@ export default async function AboutPage() {
         )}
         </div>
           </div>
-        </section>
+        </section> */}
+
+        <section
+  className="relative py-28 px-8 bg-fixed bg-center bg-cover text-slate-900"
+  style={{ backgroundImage: `url(/img/${about.Image})` }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-white/85 backdrop-blur-sm"></div>
+
+  <div className="relative container mx-auto max-w-5xl">
+    {/* Image floating left */}
+    {about.Image && (
+      <img
+        src={`/img/${about.Image}`}
+        alt={about.Title || "About Image"}
+        className="
+          w-64 h-auto rounded-lg shadow-lg mb-6 mr-6 
+          float-left 
+          object-cover 
+          sm:w-72
+        "
+      />
+    )}
+
+    <h2 className="text-4xl font-bold mb-6">{about.Title}</h2>
+
+    <div
+      className="text-lg leading-relaxed"
+      dangerouslySetInnerHTML={{ __html: about.Description }}
+    />
+  </div>
+</section>
+
 
         {/* DYNAMIC SUBSECTIONS */}
-        {sections.map((s, i) => {
+        {/* {sections.map((s, i) => {
           const isParallax = ['true', 'yes', '1'].includes(String(s.parallax).toLowerCase());
           const overlayColor = overlayColors[i % overlayColors.length];
 
@@ -136,7 +169,13 @@ export default async function AboutPage() {
               </div>
             </section>
           );
-        })}
+        })} */}
+
+        <ParallaxSections
+  sections={sections}
+  about={about}
+  overlayColors={overlayColors}
+/>
 
         {/* UNCHANGED SECTIONS */}
         <ManagementTeam data={managementData} />
